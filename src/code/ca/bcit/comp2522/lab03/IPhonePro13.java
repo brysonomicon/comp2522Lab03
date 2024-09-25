@@ -6,7 +6,7 @@ package ca.bcit.comp2522.lab03;
 public class IPhonePro13 extends IPhone
 {
     private static final boolean IPHONE_PRO13_CAMERA_RESOLUTION = true;
-    private static final int[] IPHONE_PRO13_MEMORY_SIZE         = {64, 128, 256, 512};
+    private static final int[] IPHONE_PRO13_VALID_MEMORY        = {64, 128, 256, 512};
 
     private static final int INT_CONVERSION_FACTOR              = 10;
 
@@ -19,7 +19,7 @@ public class IPhonePro13 extends IPhone
      * @param numOfMinsRemaining the number of minutes remaining; must be greater than or equal to MINIMUM_MINUTES
      * @param carrier            the carrier of the iPhone; must not be null or empty.
      * @param memory             the total memory in GB; must be one of the valid memory sizes defined in
-     *                           {@link #IPHONE_PRO13_MEMORY_SIZE}.
+     *                           {@link #IPHONE_PRO13_VALID_MEMORY}.
      * @throws IllegalArgumentException if the number of minutes remaining is negative, the carrier is null or empty,
      *                                  or the memory size is invalid.
      */
@@ -42,9 +42,9 @@ public class IPhonePro13 extends IPhone
 
         isValid = false;
 
-        for(int valid : IPHONE_PRO13_MEMORY_SIZE)
+        for(int i = 0; i < IPHONE_PRO13_VALID_MEMORY.length && !isValid; i++ )
         {
-            if(memory == valid)
+            if(memory == IPHONE_PRO13_VALID_MEMORY[i])
             {
                 isValid = true;
             }

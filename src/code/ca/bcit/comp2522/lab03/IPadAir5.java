@@ -38,9 +38,9 @@ public class IPadAir5 extends IPad
     {
         boolean isValid = false;
 
-        for (int valid : IPAD_AIR5_VALID_MEMORY)
+        for(int i = 0; i < IPAD_AIR5_VALID_MEMORY.length && !isValid; i++)
         {
-            if (memory == valid)
+            if(memory == IPAD_AIR5_VALID_MEMORY[i])
             {
                 isValid = true;
             }

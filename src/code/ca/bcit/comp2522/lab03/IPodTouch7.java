@@ -3,7 +3,7 @@ package ca.bcit.comp2522.lab03;
 public class IPodTouch7 extends IPod
 {
     private static final boolean IPOD_TOUCH7_CAMERA_RESOLUTION = false;
-    private static final int[] IPOD_TOUCH7_MEMORY_SIZE         = {16, 32};
+    private static final int[] IPOD_TOUCH7_VALID_MEMORY        = {16, 32};
 
     private final boolean highResCamera;
     private final int     totalMemoryGB;
@@ -26,9 +26,9 @@ public class IPodTouch7 extends IPod
 
         isValid = false;
 
-        for (int valid : IPOD_TOUCH7_MEMORY_SIZE)
+        for(int i = 0; i < IPOD_TOUCH7_VALID_MEMORY.length && !isValid; i++)
         {
-            if (valid == memory)
+            if(memory == IPOD_TOUCH7_VALID_MEMORY[i])
             {
                 isValid = true;
             }
