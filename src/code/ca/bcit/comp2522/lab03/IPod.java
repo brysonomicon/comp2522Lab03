@@ -1,5 +1,11 @@
 package ca.bcit.comp2522.lab03;
 
+/**
+ * Represents an abstract IPod with a specific purpose.
+ *
+ * @author Bryson, Phyo
+ * @version 1.0
+ */
 abstract public class IPod extends IDevice
 {
     private static final String IPOD_PURPOSE       = "Music";
@@ -12,6 +18,14 @@ abstract public class IPod extends IDevice
     private int numOfSongsStored;
     private double maxVolumeDB;
 
+    /**
+     * Constructs an IPod with the specified purpose.
+     *
+     * @param numOfSongsStored the number of songs stored; must not be null
+     * @param maxVolumeDB      the maximum volume of the iPod; must not be less than MIN_VOLUME_DECIBEL
+     *                         or greater than MAX_VOLUME_DECIBEL
+     *
+     */
     public IPod(final int numOfSongsStored,
                 final double maxVolumeDB)
     {
@@ -41,15 +55,28 @@ abstract public class IPod extends IDevice
         }
     }
 
+    /**
+     * Gets the number of songs stored in an IPod.
+     *
+     * @return the total number of songs
+     */
     public int getNumOfSongsStored()
     {
         return this.numOfSongsStored;
     }
 
+    /**
+     * Gets the maximum volume in decibel.
+     *
+     * @return the maximum of volume
+     */
     public double getMaxVolumeDecibel()
     {
         return this.maxVolumeDB;
     }
 
+    /**
+     * Prints the details of IPod.g
+     */
     abstract public void printDetails();
 }

@@ -2,6 +2,9 @@ package ca.bcit.comp2522.lab03;
 
 /**
  * Represents an abstract IDevice with a specific purpose.
+ *
+ * @author Bryson, Phyo
+ * @version 1.0
  */
 abstract public class IDevice
 {
