@@ -3,7 +3,7 @@ package ca.bcit.comp2522.lab03;
 /**
  * Represents an abstract IPad device with properties such as case presence and operating system version.
  *
- * @author Bryson, Phyo
+ * @author Bryson, Phyo, Nam Anh
  * @version 1.0
  */
 abstract public class IPad extends IDevice

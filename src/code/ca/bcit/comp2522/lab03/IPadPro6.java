@@ -3,7 +3,7 @@ package ca.bcit.comp2522.lab03;
 /**
  * Represents an iPad Pro 6 model with specific properties such as memory size and camera resolution.
  *
- * @author Bryson, Phyo
+ * @author Bryson, Phyo, Nam Anh
  * @version 1.0
  */
 public class IPadPro6 extends IPad

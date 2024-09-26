@@ -3,7 +3,7 @@ package ca.bcit.comp2522.lab03;
 /**
  * Represents an iPhone Pro 13 model with specific properties such as memory size and camera resolution.
  *
- * @author Bryson, Phyo
+ * @author Bryson, Phyo, Nam Anh
  * @version 1.0
  */
 public class IPhonePro13 extends IPhone

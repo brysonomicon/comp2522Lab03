@@ -3,7 +3,7 @@ package ca.bcit.comp2522.lab03;
 /**
  * Represents an iPad Air 5 model with specific properties such as memory size and camera resolution.
  *
- * @author Bryson, Phyo
+ * @author Bryson, Phyo, Nam Anh
  * @version 1.0
  */
 public class IPadAir5 extends IPad
