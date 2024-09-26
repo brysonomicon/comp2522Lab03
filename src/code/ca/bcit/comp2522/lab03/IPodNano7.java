@@ -3,8 +3,7 @@ package ca.bcit.comp2522.lab03;
 /**
  * Represents an iPod Nano 7 with specific properties such as memory size and camera resolution.
  *
- * @author Bryson
- * @author Phyo
+ * @author Bryson, Phyo
  * @version 1.0
  */
 public class IPodNano7 extends IPod

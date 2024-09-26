@@ -2,6 +2,9 @@ package ca.bcit.comp2522.lab03;
 
 /**
  * Represents an abstract IPhone device with properties such as number of minutes remaining and carrier.
+ *
+ * @author Bryson, Phyo
+ * @version 1.0
  */
 abstract public class IPhone extends IDevice
 {
