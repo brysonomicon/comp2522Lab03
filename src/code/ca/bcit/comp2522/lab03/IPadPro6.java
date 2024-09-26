@@ -16,19 +16,19 @@ public class IPadPro6 extends IPad
      *
      * @param hasCase                indicates whether the iPad has a protective case.
      * @param operatingSystemVersion the version of the operating system.
-     * @param memory                 the total memory in GB; must be one of the valid memory sizes defined in
+     * @param memoryGB               the total memory in GB; must be one of the valid memory sizes defined in
      *                               the array {@link #IPAD_PRO6_VALID_MEMORY}.
      * @throws IllegalArgumentException if the specified memory is not valid.
      */
     public IPadPro6(final boolean hasCase,
                     final int     operatingSystemVersion,
-                    final int     memory)
+                    final int     memoryGB)
     {
         super(hasCase, operatingSystemVersion);
 
-        validateMemory(memory);
+        validateMemory(memoryGB);
 
-        this.totalMemoryGB = memory;
+        this.totalMemoryGB = memoryGB;
         this.highResCamera = IPAD_PRO6_CAMERA_HIRES;
     }
 
@@ -70,6 +70,8 @@ public class IPadPro6 extends IPad
 
     /**
      * Returns a hash code value for this iPad. The hash code is based on the total memory in giga bytes.
+     * Since IPadPro6 objects are compared by their total memory, all objects can simply return their
+     * memory size to satisfy the hashCode - equals contract.
      *
      * @return a hash code value for this iPad.
      */
