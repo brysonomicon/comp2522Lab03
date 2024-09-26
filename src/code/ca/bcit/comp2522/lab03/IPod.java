@@ -24,7 +24,6 @@ abstract public class IPod extends IDevice
      * @param numOfSongsStored the number of songs stored; must not be null
      * @param maxVolumeDB      the maximum volume of the iPod; must not be less than MIN_VOLUME_DECIBEL
      *                         or greater than MAX_VOLUME_DECIBEL
-     *
      */
     public IPod(final int numOfSongsStored,
                 final double maxVolumeDB)
@@ -76,7 +75,7 @@ abstract public class IPod extends IDevice
     }
 
     /**
-     * Prints the details of IPod.g
+     * Prints the details of IPod.
      */
     abstract public void printDetails();
 }

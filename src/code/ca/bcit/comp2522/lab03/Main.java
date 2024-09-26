@@ -5,31 +5,31 @@ public class Main
     public static void main(final String[] args)
     {
         // Declare IPads
-        final IPadAir5 ipad_air1;
-        final IPadAir5 ipad_air2;
-        final IPadAir5 ipad_air3;
+        final IDevice ipad_air1;
+        final IDevice ipad_air2;
+        final IDevice ipad_air3;
 
-        final IPadPro6 ipad_pro1;
-        final IPadPro6 ipad_pro2;
-        final IPadPro6 ipad_pro3;
+        final IDevice ipad_pro1;
+        final IDevice ipad_pro2;
+        final IDevice ipad_pro3;
 
         // Declare IPhones
-        final IPhonePro13 iphone_pro1;
-        final IPhonePro13 iphone_pro2;
-        final IPhonePro13 iphone_pro3;
+        final IDevice iphone_pro1;
+        final IDevice iphone_pro2;
+        final IDevice iphone_pro3;
 
-        final IPhoneSE3 iphone_se1;
-        final IPhoneSE3 iphone_se2;
-        final IPhoneSE3 iphone_se3;
+        final IDevice iphone_se1;
+        final IDevice iphone_se2;
+        final IDevice iphone_se3;
 
         // Declare IPods
-        final IPodNano7 ipod_nano1;
-        final IPodNano7 ipod_nano2;
-        final IPodNano7 ipod_nano3;
+        final IDevice ipod_nano1;
+        final IDevice ipod_nano2;
+        final IDevice ipod_nano3;
 
-        final IPodTouch7 ipod_touch1;
-        final IPodTouch7 ipod_touch2;
-        final IPodTouch7 ipod_touch3;
+        final IDevice ipod_touch1;
+        final IDevice ipod_touch2;
+        final IDevice ipod_touch3;
 
         // Initialize IPads
         ipad_air1 = new IPadAir5(true, 15, 256, false);
