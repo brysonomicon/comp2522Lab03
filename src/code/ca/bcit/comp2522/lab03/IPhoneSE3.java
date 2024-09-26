@@ -2,6 +2,9 @@ package ca.bcit.comp2522.lab03;
 
 /**
  * Represents an iPhone SE 3 model with specific properties such as memory size and camera resolution.
+ *
+ * @author Bryson, Phyo, Nam Anh
+ * @version 1.0
  */
 public class IPhoneSE3 extends IPhone
 {
