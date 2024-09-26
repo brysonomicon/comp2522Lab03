@@ -3,7 +3,8 @@ package ca.bcit.comp2522.lab03;
 /**
  * Represents an abstract IDevice with a specific purpose.
  *
- * @author Bryson, Phyo
+ * @author Bryson Lindy
+ * @author Phyo Thu Kha
  * @version 1.0
  */
 abstract public class IDevice
@@ -23,6 +24,10 @@ abstract public class IDevice
         this.purpose = purpose;
     }
 
+    /*
+       Validates the purpose by checking if it is null first. Then checks if it is empty.
+       Throws an IllegalArgumentException if invalid.
+     */
     private static void validatePurpose(final String purpose)
     {
         if(purpose == null || purpose.isEmpty())
